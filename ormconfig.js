@@ -6,8 +6,6 @@ var dbConfig = {
     },
 }
 
-console.log('hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii');
-console.log(process.env);
 switch (process.env.NODE_ENV) {
     case 'dev':
         Object.assign(dbConfig, {
