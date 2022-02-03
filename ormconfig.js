@@ -5,17 +5,17 @@ var dbConfig = {
         migrationsDir: 'migrations'
     },
 }
-
+console.log('hiiiiiii');
 switch (process.env.NODE_ENV) {
     case 'dev':
         Object.assign(dbConfig, {
             logging: true,
             type: 'postgres',
-            port: process.env.DB_PORT,
-            host: process.env.DB_HOST,
-            username: process.env.DB_USERNAME,
-            password: process.env.DB_PASSWORD,
-            database: process.env.DB_NAME,
+            port: 5432,
+            host: "localhost",
+            username: "root",
+            password: "root",
+            database: "rcs_user",
             entities: ['**/*.entity.js'],
             synchronize: false,
         })
@@ -39,11 +39,7 @@ switch (process.env.NODE_ENV) {
             logging: true,
             type: 'postgres',
             url: process.env.DATABASE_URL,
-            port: process.env.DATABASE_PORT,
-            host: process.env.DATABASE_HOST,
-            username: process.env.DATABASE_USERNAME,
-            password: process.env.DATABASE_PASSWORD,
-            database: process.env.DATABASE_NAME,
+            migrationsRun: true,
             entities: ['**/*.entity.js'],
             synchronize: false,
             ssl: true,
