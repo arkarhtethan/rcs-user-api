@@ -1,8 +1,10 @@
 # User Api
 
 **Project**: [rcs-user-api][project-url]
-#
+
 **Live**: [rcs-user-api-live][project-demo]
+
+**Postman Collection**: [postman-collection-link][collection-link]
 
 ## Instruction
 
@@ -36,3 +38,4 @@ now just run command `npm run start:dev`
 
 [project-url]: https://github.com/arkarhtethan/rcs-user-api.git
 [project-demo]: https://rcs-user-api.herokuapp.com/
+[collection-link]: https://go.postman.co/workspace/RCS~cb9f9bb0-d398-45dd-8d63-2be7e53aca69/collection/7196426-f9ba51d4-7c24-4078-b352-d8c759b637ee
